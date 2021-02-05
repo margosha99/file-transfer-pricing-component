@@ -13,3 +13,4 @@ The designs were created to the following widths:
 - Desktop: 1440px
 
 ## Demo
+https://margosha99.github.io/file-transfer-pricing-component/
