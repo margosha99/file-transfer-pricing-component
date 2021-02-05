@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+  <h2 class="pricing-title">Our Pricing</h2>
+  <section class="pricing-plan">
+    <span>Annualy</span>
+    <input class="switch" type="checkbox" id="switcher">
+    <span>Monthly</span>
+  </section>
+
+  <section class="pricing-card">
+    <a href="#" class="pricing-card__card card--shadow">
+      <p class="pricing-card__subscribtion-plan">Basic</p>
+      <span class="pricing-card__price" id="basic">&dollar;199.99</span>
+      <p class="pricing-card__storage">500 GB Storage</p>
+      <p class="pricing-card__users">2 Users Allowed</p>
+      <p class="pricing-card__trafic">Send up to 3 GB</p>
+      <button class="pricing-card__button">Learn more</button>
+    </a>
+
+    <a href="#" class="pricing-card__card purple--card card--shadow">
+      <p class="pricing-card__subscribtion-plan white">Professional</p>
+      <span class="pricing-card__price white" id="prof">&dollar;249.99</span>
+      <p class="pricing-card__storage white">1 TB Storage</p>
+      <p class="pricing-card__users white">5 Users Allowed</p>
+      <p class="pricing-card__trafic white">Send up to 10 GB</p>
+      <button class="pricing-card__button white-button">Learn more</button>
+    </a>
+
+    <a href="#" class="pricing-card__card card--shadow">
+      <p class="pricing-card__subscribtion-plan">Master</p>
+      <span class="pricing-card__price" id="master">&dollar;399.99</span>
+      <p class="pricing-card__storage">2 TB Storage</p>
+      <p class="pricing-card__users">10 Users Allowed</p>
+      <p class="pricing-card__trafic">Send up to 20 GB</p>
+      <button class="pricing-card__button">Learn more</button>
+    </a>
+  </section>
+    <script src="script.js" ></script>
+</body>
+</html>

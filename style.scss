@@ -1,0 +1,185 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    // background-color: hsl(240, 78%, 98%);
+    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+}
+a{  
+    text-decoration: none;
+}
+$very-light-grayish-blue: hsl(240, 78%, 98%);
+$light-grayish-blue: hsl(234, 14%, 74%);
+$grayish-blue: hsl(233, 13%, 49%);
+$dark-grayish-blue:  hsl(232, 13%, 33%);
+$linear-from: hsl(236, 72%, 79%);
+$linear-to: hsl(237, 63%, 64%);
+
+.pricing-title{
+    text-align: center;
+    color: $linear-from;
+}
+.pricing-plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+
+    span{
+        color: $grayish-blue;
+        font-weight: 700;
+    }
+}
+.switch {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 $linear-to;
+    transition-duration: 200ms;
+  }
+  
+.switch:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    // box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+}
+  
+.switch:checked {
+    box-shadow: inset 20px 0 0 0 $linear-to;
+    border-color: $linear-to;
+}
+  
+.switch:checked:after {
+    left: 15px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px 25px;
+        width: 75%;
+        border-radius: 2%;
+        margin-bottom: 50px;
+    }
+
+    .card--shadow{
+        box-shadow: -4px 30px 35px 5px rgba(0,0,0,0.1);
+    }
+
+    .purple--card{
+        color: #fff;    
+        background: linear-gradient($linear-from, $linear-to);
+    }
+    .white{
+        color: #fff;
+    }
+    .white-button{
+        background: #fff;
+        color: $linear-to;
+        font-weight: 700;
+        font-size: 12px;
+        &:hover{
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
+
+    &__subscribtion-plan{
+        font-size: 18px;
+        font-weight: 700;
+        color: $grayish-blue;
+    }
+    &__price{
+        font-size: 60px;
+        font-weight: 700;
+        color: $dark-grayish-blue;
+        margin-bottom: 18px;
+    }
+
+    &__storage{
+        margin: 0;
+        border-top: 1px solid $light-grayish-blue;
+        border-bottom: 1px solid $light-grayish-blue;
+        padding: 15px 0;
+        width: 100%;
+        color:$grayish-blue;
+        font-weight: 700;
+        text-align: center;
+
+    }
+    &__users, &__trafic{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        color:$grayish-blue;
+        font-weight: 700;
+        border-bottom: 1px solid $light-grayish-blue;
+    }
+    
+    &__button{
+        margin-top: 20px;
+        background: linear-gradient($linear-from, $linear-to);
+        border: 1px solid #fff;
+        color: #fff;
+        width: 100%;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        &:hover{
+            background: transparent;
+            color: $linear-to;
+            transition: color 500ms;
+            border: 1px solid $linear-to;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px ){
+
+    .pricing-plan{
+        width: 50%;
+    }
+    .pricing-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__card{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+        }
+
+        .purple--card{
+            height: 400px;
+            justify-content: center;
+        }
+    }
+}
